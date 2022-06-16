@@ -1,0 +1,13 @@
+
+.container {
+    width: 440px;
+    height: 240px;
+    background: yellow;
+    font-family: "Arial Black";
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.center {
+    font-style: italic;
+}
