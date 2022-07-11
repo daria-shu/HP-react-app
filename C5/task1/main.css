@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex; /* Коробочная модель */
+    justify-content: center; /* Шпиндель центрирован */
+    align-items: center; /* Проект в центре */
+    height: 100vh; /*рост*/
+    background-color: #9c8eb6; /*фоновый цвет*/
+    font-family: sans-serif; /*Шрифт*/
+}
+
+.container{
+    display: block;
+}
+
+.calendar{
+    position: relative;
+    background-color: #fff;
+    width: 800px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 15px solid #fff; /*Рамка*/
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+.calendar .date{
+    width: 400px;
+    padding: 30px;
+    box-sizing: border-box; /* Правила размера ящика */
+}
+.calendar .date h3{
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 24px; /*размер шрифта*/
+    font-weight: 500; /* Размер шрифта */
+    text-align: center; /* Шрифт в центре */
+    user-select: none; /* Не выбирается */
+    text-transform: capitalize; /* Прописать первую букву */
+}
+.calendar .date .days{
+    display: flex;
+    flex-wrap: wrap; /* Можно завернуть */
+}
+.calendar .date .days .number:hover{
+    background-color: #e2c9ec;
+    color: #fff;
+    cursor: pointer; /*Стиль мыши */
+    border-radius: 20%; /*Закругленные углы границы */
+}
+.last-month{
+    color: #ccc;
+}
+.calendar .date .days .day,
+.calendar .date .days .number{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.calendar .date .days .day:nth-last-child(7n+1),
+.calendar .date .days .number:nth-last-child(7n+1){ /* 7 как группа, первая в каждой группе */
+    color: #f00;
+    font-weight: 600;
+}
+.calendar .img{
+    position: relative;
+    top:0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background-color: #000;
+    user-select: none;
+}
+.calendar .img img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Как содержимое элемента соответствует экрану */
+}
+ul{
+    padding-inline-start: 0px;
+}
+.mon{
+    display: flex;
+}
+.month{
+    list-style: none;
+    margin: auto;
+    color: #cccccc;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+.month:hover{
+    color: #e8db0c;
+    font-weight: 600;
+    font-size: 1.7em;
+}
