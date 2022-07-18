@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+
+.main{
+    width: 900px;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D2D5D6;
+}
+
+.container{
+    width: 500px;
+    height: 600px;
+    background-color: #EEF1F2;
+    border-radius: 25px;
+}
+
+.image{
+    width: 500px;
+    border-radius: 25px 25px 0 0;
+}
+
+.player{
+    margin: 70px;
+
+}
+
+.info{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.artist, .album, .song{
+    font-family: 'Oxygen', sans-serif;
+    color: #455569;
+}
+
+.artist{
+    font-size: 1.8em;
+    font-weight: 800;
+    margin: 0;
+}
+
+.album{
+    font-size: 1.6em;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+.song{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.likes{
+    color: #ccc;
+    font-size: 2em;
+}
+
+.fa-heart{
+    color: firebrick;
+}
+
+.progress{
+    height: 10px;
+    background: #455569;
+    border-radius:5px;
+    position: relative;
+}
+.progress-bar{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 60%;
+    height: 100%;
+    margin-top: 55px;
+    background-color: #ccc;
+}
+
+.control{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.buttons{
+    display: flex;
+
+
+}
+
+.btn-f, .btn-b{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #455569;
+    color: #fff;
+    font-size: 1.2em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.btn-p{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #455569;
+    color: #fff;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.mix{
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+
