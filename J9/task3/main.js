@@ -7,9 +7,9 @@ const counter = document.querySelector("#counter")
 
 function clicker(sign){
 
-    if (sign === 'plus'){
+    if (sign === "plus"){
         counter.innerHTML++
-    } else if (sign === 'minus'){
+    } else if (sign === "minus"){
         counter.innerHTML--
     }
 
