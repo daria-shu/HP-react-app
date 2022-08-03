@@ -1,0 +1,30 @@
+@font-face {
+    font-family: clockFont, dateFont;
+    src: url("digital-7 (italic).ttf");
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    height: 400px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.clock {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) translateY(-25%);
+    color: yellow;
+    font-size: 130px;
+    font-family: clockFont;
+    letter-spacing: 10px;
+}
+.date {
+    position: absolute;
+    transform: translateX(20%) translateY(-150%);
+    color: yellow;
+    font-size: 80px;
+    font-family: dateFont;
+}
