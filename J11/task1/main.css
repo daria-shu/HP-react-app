@@ -1,6 +1,6 @@
 @font-face {
-    font-family: clockFont, dateFont;
-    src: url("digital-7 (italic).ttf");
+    font-family: 'Digital-7';
+    src: url("digital-7 (italic).ttf") format('woff');
 }
 .container {
     display: flex;
@@ -18,7 +18,7 @@
     transform: translateX(-50%) translateY(-25%);
     color: yellow;
     font-size: 130px;
-    font-family: clockFont;
+    font-family: 'Digital-7';
     letter-spacing: 10px;
 }
 .date {
@@ -26,5 +26,5 @@
     transform: translateX(20%) translateY(-150%);
     color: yellow;
     font-size: 80px;
-    font-family: dateFont;
+    font-family: 'Digital-7';
 }
