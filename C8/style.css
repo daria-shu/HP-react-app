@@ -1,3 +1,11 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 80vh;
+    margin: 30px;
+    top: auto;
+}
 .black.elephant,
 .black.elephant::before,
 .black.elephant::after,
@@ -34,88 +42,42 @@
     background-color: rgb(219, 210, 210);
     cursor: pointer;
 }
-@keyframes king {
-0% {
-    top: 20px;
-    left: 10px;
+@keyframes chess {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:-100px;}
+    50%  {background-color:blue; left:200px; top:-200px;}
+    75%  {background-color:green; left:100px; top:-10px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+div {
+    position: relative;
+    background-color: red;
+    animation-name: chess;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+}
+@keyframes blackKing {
+    0%   {background-color:red; left:20px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:10px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
 }
 
-5% {
-    top: 20px;
-    left: 75px;
-}
-
-10% {
-    top: 20px;
-    left: 10px;
-}
-
-15% {
-    top: 20px;
-    left: 135px;
-}
-
-20% {
-    top: 20px;
-    left: 10px;
-}
-
-25% {
-    top: 20px;
-    left: 200px;
-}
-
-30% {
-    top: 20px;
-    left: 10px;
-}
-
-35% {
-    top: 20px;
-    left: 265px;
-}
-
-40% {
-    top: 20px;
-    left: 10px;
-}
-
-50% {
-    top: 85px;
-    left: -55px;
-}
-
-60% {
-    top: 20px;
-    left: 10px;
-}
-
-70% {
-    top: 145px;
-    left: -120px;
-}
-
-80% {
-    top: 20px;
-    left: 10px;
-}
-
-90% {
-    top: 210px;
-    left: -180px;
-}
-
-100% {
-    top: 20px;
-    left: 10px;
-}
-}
 .king:hover {
-    animation: king 20s;
+    position: relative;
+    animation-name: blackKing;
+    animation-direction: alternate-reverse;
 }
+@keyframes blackPawn {
+    75%  {background-color:yellow; left:20px; top:10px;}
 
-
-
+}
+.pawn:hover {
+    position: relative;
+    animation-name: blackPawn;
+    animation-duration: 10s;
+}
 
 .black.king::before {
     color: rgb(37, 36, 36);
@@ -128,6 +90,7 @@
 .black.king {
     border-bottom-color: rgb(37, 36, 36);
 }
+
 .white.pawn,
 .white.king {
     border-bottom-color: rgb(219, 210, 210);
@@ -139,7 +102,7 @@
 .even td:nth-child(2n) {
     background-color: beige;
 }
-.horse {
+.horse{
     height: 40px;
     width: 30px;
     margin: auto;
