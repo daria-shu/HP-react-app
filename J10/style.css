@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 200px;
+    background-color: #c5f8f1;
+    border: solid 2px black;
+    margin: 100px;
+}
