@@ -1,0 +1,39 @@
+body{
+    margin: 0 auto;
+}
+.container {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    height: 100vh;
+    text-align: center;
+    font-size: 50px;
+}
+.left {
+    border: solid 1px;
+    background-color: #D0E0E3;
+}
+.right {
+    border: solid 1px;
+    background-color: #CFE2F3;
+}
+.center {
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+header {
+    border: solid 1px;
+    background-color: #FCE5CD;
+}
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.content1 {
+    border: solid 1px;
+    background-color: #FFF2CC;
+}
+.content2 {
+    border: solid 1px;
+    background-color: #EED9C2;
+}
+

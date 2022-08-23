@@ -1,0 +1,29 @@
+body {
+    margin: 0 auto;
+}
+.container {
+    display: grid;
+    text-align: center;
+    font-size: 50px;
+}
+main {
+    display: grid;
+    grid-template-columns: 10% 800px 1fr;
+}
+.left {
+    border-block: solid 1px;
+    background-color: #E5CDD7;
+}
+.content {
+    border: solid 1px;
+    background-color: #F6EAC5;
+}
+.col1 {
+    height: 200px;
+    border: solid 1px;
+    background-color: #CFE2F3;
+}
+.col2 {
+    border: solid 1px;
+    background-color: #FCE5CD;
+}
