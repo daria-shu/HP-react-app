@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.field {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    background-color: pink;
+}
+.cell {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #b227d7;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reset {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 20px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+#reset:hover {
+    color: white;
+    background-color: #b227d7;
+}
