@@ -29,7 +29,7 @@ function start() {
             top: top,
             element: cell
         });
-
+//  стилизируем наши ячейки
         cell.style.left = `${left * cellSize}px`;
         cell.style.top = `${top * cellSize}px`;
 
