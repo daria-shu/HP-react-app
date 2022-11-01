@@ -7,8 +7,6 @@ describe("Tests", function () {
     it('pow function test', function () {
         assert.equal(pow(2, 3), 8);
         assert.equal(pow(2, 2), 4);
-        // assert.equal(pow(-2, 2), -4);
-        // assert.equal(pow(2, -2), 0.25);
     });
 
     it('convert kg function test', function () {
