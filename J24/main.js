@@ -13,6 +13,7 @@ const regionName = document.getElementById('regionName');
 const status = document.getElementById('status');
 const timezone = document.getElementById('timezone');
 const zip = document.getElementById('zip');
+const GeoImg = document.getElementById('GeoImg');
 
 
 
