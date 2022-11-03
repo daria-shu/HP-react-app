@@ -4,6 +4,7 @@ function request(){
         dataType: 'json',
         success: function(data) {
             setData(data)
+            console.log(data)
         }
     });
 }

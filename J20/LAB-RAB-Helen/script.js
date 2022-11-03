@@ -8,6 +8,7 @@ const displayUserGander = document.getElementById("displayUserGander");
 const userDOB = document.getElementById("displayUserDOB");
 const userAddress = document.getElementById("displayUserAddress");
 
+
 const getNewUserInfo = () => {
     fetch('https://randomuser.me/api')
         .then(response => response.json())
