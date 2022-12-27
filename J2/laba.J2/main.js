@@ -1,5 +1,0 @@
-let a = Number(prompt('прибыль за первый месяц'))
-let b = Number(prompt('прибыль за второй месяц'))
-let c = Number(prompt('прибыль за третий месяц'))
-console.log(a+b+c)
-console.log((a+b+c)/3)
